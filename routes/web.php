@@ -17,5 +17,6 @@ Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['middleware'=>'auth'],function(){
-    Route::get('books', 'BookController@index')->name('books.index');
+    Route::get('mybooks', 'BookController@getAllBooksByOwner');
+    Route::get('mybooks/{book}', 'BookController@getBookByOwner');
 });
