@@ -20,9 +20,6 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->integer('balance')->default('0')->comment('余额，单位分');
             $table->integer('school_id')->default('0')->comment('学校ID');
-            $table->text('express_address')->nullable()->comment('收货地址信息');
-            $table->text('express_name')->nullable()->comment('收货人姓名');
-            $table->text('express_mobile')->nullable()->comment('收货人手机号');
             $table->integer('score')->default('0')->comment('用户评分');
             $table->tinyInteger('gender')->default('1')->comment('性别：0-女、1-男');
             $table->string('mobile', 20)->default('')->comment('手机');

@@ -11,11 +11,19 @@
     <link href="{{ mix('css/app.css') }}" rel="stylesheet">
 </head>
 <body>
-    <div id="app" class="">
+<div id="app" class="">
         @include('layouts._header')
         <div class="container">
             @yield('content')
         </div>
+        <a href="#app">
+            <button type="button" class="btn btn-primary backTop" >
+                返<br/>
+                回<br/>
+                顶<br/>
+                部<br/>
+            </button>
+        </a>
     </div>
     <!-- JS 脚本 -->
     <script src="{{ mix('js/app.js') }}"></script>

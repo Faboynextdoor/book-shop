@@ -46,7 +46,7 @@
                     <ul class="nav navbar-nav navbar-right">
                     <li>
                     <a href="publish">
-                        发布
+                        发布旧书
                     </a>
                     </li>
                     </ul>

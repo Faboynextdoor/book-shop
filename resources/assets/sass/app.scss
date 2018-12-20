@@ -483,3 +483,20 @@ body {
     border-radius: 0px;
   }
 }
+.thumbnail img{
+
+  height:180px;
+  padding:2px;
+  border:solid 1px #000;
+}
+.navbar-static-top{
+  margin-bottom: 10px;
+}
+.thumbnail {
+  border: 1px solid #000;
+}
+.backTop{
+  position:fixed;
+  left:0px;
+  bottom:0px;
+}

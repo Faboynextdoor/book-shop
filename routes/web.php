@@ -12,11 +12,13 @@
 */
 
 Route::get('/',"HomeController@index");
-
+Route::post('/','HomeController@search');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
 Route::group(['middleware'=>'auth'],function(){
+    Route::get('publish','BookController@getPublishView');
+    Route::post('publish','BookController@store');
     Route::get('mybooks', 'BookController@getAllBooksByOwner');
     Route::get('mybooks/{book}', 'BookController@getBookByOwner');
 });
